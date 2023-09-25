@@ -7,7 +7,7 @@ create table usuarios(
     email varchar(120) not null,
     nome varchar(120) not null,
     senha varchar(120) not null,
-    usuario_tipo enum ("artista", "cliente"),
+    usuario_tipo enum ("artista", "cliente") default("cliente"),
     primary key (id)
 );
 insert into usuarios(email,nome,senha,usuario_tipo)
